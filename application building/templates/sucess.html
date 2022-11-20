@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> 
+
+</head>
+<body class="bg-no-repeat bg-cover antialiased" style="background-image:url('{{ url_for('static', filename='results.jpg')}}');">
+    
+
+    <a href="index.html" class="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700 hover:text-white" aria-current="page">HOME</a>
+        
+    <a href="prediction.htm" class="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700 hover:text-white">PREDICTION</a>
+
+
+    <div class="w-full max-w-3xl pl-96 pt-60 ">
+        <form class="bg-white shadow-md rounded-2xl px-8 pt-6 pb-8 mb-4 border-red-600 border-4">
+          <p class="text-center font-semibold font-serif underline ">RESULTS</p>
+
+          <br>
+
+          <div class="relative">
+            <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" >
+              <option>option 1</option>
+              <option>option 2</option>
+              <option>option 3</option>
+            </select>
+        </div>
+        <br><div class="relative">
+            <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" >
+              <option>option 1</option>
+              <option>option 2</option>
+              <option>option 3</option>
+            </select>
+        </div>
+        <br>
+
+        </form>
+    </div>
+</body>
+</html>

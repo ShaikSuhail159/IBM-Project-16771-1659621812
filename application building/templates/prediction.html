@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>PREDICTION</title>
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> 
+    
+    </head>
+<body class="antialiased bg-no-repeat bg-cover" style="background-image:url('{{ url_for('static', filename='prediction_page.jpg')}}');">
+    
+    <a href="index.html" class="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700 hover:text-white">HOME</a>
+        
+    <a href="prediction.htm" class="px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-md" aria-current="page">PREDICTION</a>
+
+    <div class="w-full max-w-3xl pl-96 scroll-pt-24">
+        <form class="px-8 pt-10 mb-4 bg-white shadow-md pb-98 rounded-2xl" action='./result.html' method='POST'>
+        <div><br>
+          <label for="exampleFormControlInput1" class="form-label">Enter blood urea</label>
+          <input type="text" class="w-full px-3 py-2 mb-3 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline form-control"  name="blood_urea" placeholder="blood_urea">
+        </div>
+        <div>
+          <label for="exampleFormControlInput1" class="form-label">Enter blood glucose</label>
+          <input type="text" class="w-full px-3 py-2 mb-3 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline form-control" name="blood glucose random" placeholder="blood glucose random">
+        </div>
+      <div>
+        <label for="exampleFormControlInput1" class="form-label">Enter coronary_artery_disease</label>
+        <select class="w-full px-3 py-2 mb-3 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline form-control"  name="coronary_artery_disease" aria-label="Default select example">
+        <option selected>-- select Enter coronary_artery_disease --</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+      </select>
+      </div>
+      <div>
+        <label for="exampleFormControlInput1" class="form-label">Enter anemia</label>
+        <select class="w-full px-3 py-2 mb-3 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline form-control"  name="anemia" aria-label="Default select example">
+        <option selected>-- select Enter anemia --</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+      </select>
+      </div>
+      <div>
+        <label for="exampleFormControlInput1" class="form-label">Enter pus_cell</label>
+        <select class="w-full px-3 py-2 mb-3 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline form-control"  name="pus_cell" aria-label="Default select example">
+        <option selected>-- select Enter pus_cell --</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+      </select>
+      </div>
+      <div>
+        <label for="exampleFormControlInput1" class="form-label">Enter red_blood_cells</label>
+        <select class="w-full px-3 py-2 mb-3 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline form-control"  name="red_blood_cells" aria-label="Default select example">
+        <option selected>-- select Enter red_blood_cells --</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+      </select>
+      </div>
+      <div>
+        <label for="exampleFormControlInput1" class="form-label">Enter diabetesmellitus</label>
+        <select class="w-full px-3 py-2 mb-3 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline form-control"  name="diabetesmellitus" aria-label="Default select example">
+        <option selected>-- select Enter diabetesmellitus --</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+      </div>
+      <div>
+        <label for="exampleFormControlInput1" class="form-label">Enter pedal_edema</label>
+        <select class="w-full px-3 py-2 mb-3 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline form-control"  name="pedal_edema" aria-label="Default select example">
+        <option selected>-- select Enter pedal_edema --</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+      </select>
+      </div>
+    <button  class="px-4 py-2 font-bold text-white bg-blue-500 justify-items-center hover:bg-blue-800 rounded-3xl focus:outline-none focus:shadow-outline" type="submit" onclick="window.location.href='./result.html'">
+Predict</button><br><br>
+      </form></div>
+   
+      </div>
+      </section>
+</body>
+</html>
